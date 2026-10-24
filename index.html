@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Kebijakan Privasi — Kalola Kasir</title>
+  <style>
+    :root {
+      --primary: #16A765;
+      --primary-dark: #0E6E42;
+      --text: #1F2937;
+      --text-muted: #4B5563;
+      --bg: #F9FAFB;
+      --card-bg: #FFFFFF;
+      --border: #E5E7EB;
+    }
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+      line-height: 1.6;
+      color: var(--text);
+      background-color: var(--bg);
+      padding: 24px 16px;
+    }
+    .container {
+      max-width: 800px;
+      margin: 0 auto;
+      background: var(--card-bg);
+      padding: 40px;
+      border-radius: 12px;
+      box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05), 0 2px 4px -1px rgba(0, 0, 0, 0.03);
+      border: 1px solid var(--border);
+    }
+    header {
+      border-bottom: 2px solid var(--border);
+      padding-bottom: 24px;
+      margin-bottom: 32px;
+    }
+    .brand {
+      display: flex;
+      align-items: center;
+      gap: 12px;
+      margin-bottom: 12px;
+    }
+    .brand-badge {
+      background: var(--primary);
+      color: white;
+      font-weight: bold;
+      padding: 6px 12px;
+      border-radius: 6px;
+      font-size: 14px;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+    }
+    h1 {
+      font-size: 28px;
+      color: var(--text);
+      margin-bottom: 8px;
+    }
+    .updated-date {
+      color: var(--text-muted);
+      font-size: 14px;
+    }
+    h2 {
+      font-size: 20px;
+      color: var(--primary-dark);
+      margin-top: 32px;
+      margin-bottom: 12px;
+      padding-bottom: 6px;
+      border-bottom: 1px solid var(--border);
+    }
+    p, ul, ol {
+      color: var(--text-muted);
+      margin-bottom: 16px;
+      font-size: 15px;
+    }
+    ul, ol {
+      padding-left: 24px;
+    }
+    li {
+      margin-bottom: 8px;
+    }
+    .highlight-box {
+      background-color: #ECFDF5;
+      border-left: 4px solid var(--primary);
+      padding: 16px 20px;
+      border-radius: 4px;
+      margin: 20px 0;
+    }
+    .highlight-box h3 {
+      color: var(--primary-dark);
+      font-size: 16px;
+      margin-bottom: 6px;
+    }
+    .highlight-box p {
+      color: #065F46;
+      margin-bottom: 0;
+    }
+    .deletion-section {
+      background: #FFFBEB;
+      border: 1px solid #FDE68A;
+      border-left: 4px solid #F59E0B;
+      padding: 20px;
+      border-radius: 8px;
+      margin: 28px 0;
+    }
+    .deletion-section h3 {
+      color: #92400E;
+      margin-bottom: 8px;
+    }
+    .deletion-section p, .deletion-section li {
+      color: #78350F;
+    }
+    a {
+      color: var(--primary);
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    footer {
+      margin-top: 40px;
+      padding-top: 20px;
+      border-top: 1px solid var(--border);
+      text-align: center;
+      font-size: 13px;
+      color: var(--text-muted);
+    }
+  </style>
+</head>
+<body>
+
+  <div class="container">
+    <header>
+      <div class="brand">
+        <span class="brand-badge">Kalola</span>
+        <span style="font-size: 18px; font-weight: 600; color: #374151;">Aplikasi Kasir POS</span>
+      </div>
+      <h1>Kebijakan Privasi (Privacy Policy)</h1>
+      <p class="updated-date">Terakhir diperbarui: 24 Oktober 2026</p>
+    </header>
+
+    <section>
+      <p>
+        Selamat datang di <strong>Kalola Kasir</strong>. Kami menghargai dan melindungi privasi setiap pengguna, staf kasir, dan pemilik usaha yang menggunakan aplikasi kasir dan layanan kami. Kebijakan Privasi ini menjelaskan bagaimana data Anda dikumpulkan, digunakan, disimpan, dan dilindungi saat menggunakan aplikasi <strong>Kalola Kasir</strong>.
+      </p>
+    </section>
+
+    <section>
+      <h2>1. Informasi yang Kami Kumpulkan</h2>
+      <p>Untuk menunjang kelancaran operasional kasir (Point of Sale), kami mengumpulkan informasi terbatas berikut:</p>
+      <ul>
+        <li><strong>Informasi Akun Staf:</strong> Alamat email, nama staf, dan identitas outlet (Outlet ID) yang digunakan untuk proses autentikasi dan otorisasi peran kasir/manajer.</li>
+        <li><strong>Data Transaksi Kasir:</strong> Riwayat pemesanan produk, jumlah transaksi, metode pembayaran (Tunai/QRIS), dan waktu transaksi untuk keperluan pencatatan dan pencetakan struk.</li>
+        <li><strong>Informasi Perangkat Keras (Hardware):</strong> Koneksi Bluetooth perangkat semata-mata digunakan untuk mendeteksi dan mengirim data cetak ke <em>printer thermal Bluetooth</em> (ukuran 58mm/80mm).</li>
+      </ul>
+
+      <div class="highlight-box">
+        <h3>🛡️ Transparansi Izin Bluetooth & Lokasi</h3>
+        <p>Aplikasi Kalola Kasir menggunakan izin Bluetooth (<code>BLUETOOTH_CONNECT</code> dan <code>BLUETOOTH_SCAN</code> dengan atribut <code>neverForLocation</code>) murni untuk keperluan komunikasi dengan printer struk thermal. <strong>Kami TIDAK mengakses, melacak, mengumpulkan, atau membagikan koordinat lokasi fisik GPS perangkat Anda.</strong></p>
+      </div>
+    </section>
+
+    <section>
+      <h2>2. Penggunaan Informasi</h2>
+      <p>Informasi yang dikumpulkan digunakan semata-mata untuk:</p>
+      <ul>
+        <li>Menyediakan fungsionalitas kasir, kalkulasi pesanan, dan pencetakan struk belanja.</li>
+        <li>Sinkronisasi status stok menu dan notifikasi pesanan masuk secara langsung (realtime) melalui koneksi WebSocket aman.</li>
+        <li>Menghasilkan laporan keuangan dan rekapitulasi penjualan harian bagi pemilik usaha (Owner/Manajer).</li>
+        <li>Memastikan keamanan autentikasi akun staf serta mencegah akses tidak sah.</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>3. Keamanan Data & Enkripsi</h2>
+      <p>
+        Keamanan informasi Anda adalah prioritas utama kami. Seluruh komunikasi data antara aplikasi Kalola Kasir dan server backend dilindungi menggunakan enkripsi standar industri perbankan:
+      </p>
+      <ul>
+        <li><strong>HTTPS / TLS:</strong> Seluruh transmisi API terenkripsi saat transit.</li>
+        <li><strong>WSS (Secure WebSocket):</strong> Sinkronisasi status order dilindungi jalur terenkripsi.</li>
+        <li><strong>Hardware-Backed Keystore:</strong> Kredensial token autentikasi disimpan di penyimpanan aman perangkat (<em>Secure Storage</em>).</li>
+      </ul>
+    </section>
+
+    <section>
+      <h2>4. Pembagian Data ke Pihak Ketiga</h2>
+      <p>
+        <strong>Kami TIDAK menjual, memperdagangkan, atau menyewakan data pribadi pengguna atau data penjualan toko Anda kepada pihak ketiga manapun.</strong> Data hanya diproses oleh server internal Kalola untuk menjalankan fungsi aplikasi.
+      </p>
+    </section>
+
+    <!-- ANCHOR KHUSUS GOOGLE PLAY DELETION REQUIREMENT -->
+    <section id="deletion" class="deletion-section">
+      <h3>🗑️ 5. Tata Cara Penghapusan Akun & Data (Account Deletion)</h3>
+      <p>
+        Sesuai dengan kebijakan transparansi pengguna Google Play, setiap pengguna atau pemilik usaha berhak meminta penghapusan akun staf dan data usaha yang tersimpan di sistem kami:
+      </p>
+      <ol>
+        <li>Pengguna atau pemilik usaha dapat mengajukan permohonan penghapusan akun dengan mengirimkan email ke: <a href="mailto:support@kalola.store"><strong>support@kalola.store</strong></a>.</li>
+        <li>Gunakan subjek email: <code>[Permohonan Hapus Akun] - &lt;Nama Usaha / Email Akun&gt;</code>.</li>
+        <li>Sertakan alamat email akun kasir yang ingin dihapus.</li>
+        <li>Tim operasional kami akan memverifikasi permohonan dan menghapus akun beserta data terkait dalam kurun waktu maksimal <strong>3 &times; 24 jam kerja</strong>.</li>
+      </ol>
+      <p style="margin-top: 8px; font-size: 13px;">
+        <em>Catatan: Salinan data transaksi penjualan tertentu mungkin tetap diarsipkan secara anonim semata-mata untuk kepatuhan pembukuan keuangan dan kewajiban perpajakan usaha yang sah sesuai hukum yang berlaku.</em>
+      </p>
+    </section>
+
+    <section>
+      <h2>6. Perubahan Kebijakan Privasi</h2>
+      <p>
+        Kami dapat memperbarui Kebijakan Privasi ini dari waktu ke waktu untuk menyesuaikan dengan pembaruan fitur atau regulasi hukum yang berlaku. Setiap perubahan akan diumumkan melalui pembaruan tanggal "Terakhir diperbarui" di bagian atas halaman ini.
+      </p>
+    </section>
+
+    <section>
+      <h2>7. Kontak Dukungan</h2>
+      <p>
+        Jika Anda memiliki pertanyaan, saran, atau permohonan terkait privasi data Anda, silakan hubungi tim kami melalui:
+      </p>
+      <ul>
+        <li><strong>Email:</strong> <a href="mailto:support@kalola.store">support@kalola.store</a></li>
+        <li><strong>Layanan:</strong> Kalola Kasir Customer Support</li>
+      </ul>
+    </section>
+
+    <footer>
+      &copy; 2026 Kalola Kasir. Hak Cipta Dilindungi Undang-Undang.
+    </footer>
+  </div>
+
+</body>
+</html>
